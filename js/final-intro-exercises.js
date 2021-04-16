@@ -12,26 +12,25 @@
 // console.log(d++);
 // console.log(e++);
 
-// Why is false++ = 0?!!!!!
 
 // var perplexed; // perplexed is undefined (no value is assigned)
 // perplexed + 2;
 
-// console.log(perplexed + 2); NaN
+// console.log(perplexed + 2); // NaN
 
 // var price = 2.7;
 // price = price.toFixed(2);
-// console.log(price);
+// console.log(price); // 2.70
 
 // var price = "2.7";
 // price = price.toFixed(2);
-// console.log(price);
+// console.log(price); // not a function
 
 // console.log(isNaN(0)); //false
 //
 // console.log(isNaN(1)); //false
 //
-// console.log(isNaN("")); //false!!!!!!!!!
+// console.log(isNaN("")); //false -> empty string = falsy = false = 0
 //
 // console.log(isNaN("string")); //true
 //
@@ -89,12 +88,31 @@
 // var str1 = " students";
 // var mix = sample.concat(str1);
 // console.log(mix);
-
-// console.log(sample.indexOf("c")); // -1?!!!!!!!!
-
+// console.log(sample.indexOf("c")); //
 // var sample2 = sample.substr(6,12);
 // console.log(sample2);
 
-var username = 'codeup';
-var password = 'notastrongpassword';
+// var moviePrice = 3;
+// var bearMovie = (moviePrice * 5);
+// var mermaidMovie = (moviePrice * 3);
+// var herculesMovie = (moviePrice * 1);
+// var totalPrice = (bearMovie + mermaidMovie + herculesMovie);
+// console.log(totalPrice);
 
+// var google = (400 * 6);
+// var amazon = (380 * 10);
+// var facebook = (350 * 4);
+// var totalPay = facebook + amazon + google;
+// console.log(totalPay);
+
+// var studentEnrollment = (classFull && noClassConflict);
+//
+// var productOffer = premiumAccount || (moreThan2Items && offerValid);
+
+// var username = 'codeup';
+// var password = 'notastrongpassword';
+//
+// var atLeast5 = password.length >= 5;
+// var noUsername = !password.includes(username);
+// var lessThan20Char = password.length <= 20;
+// var
