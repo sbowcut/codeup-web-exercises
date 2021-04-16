@@ -115,4 +115,4 @@
 // var atLeast5 = password.length >= 5;
 // var noUsername = !password.includes(username);
 // var lessThan20Char = password.length <= 20;
-// var
+// var noWhitespace = (username[0] !== " " && username[-1] !== " " && password[0] !== " " && password[-1] !== " ");
