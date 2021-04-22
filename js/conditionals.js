@@ -39,8 +39,7 @@
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-        var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-        var randomColor = colors[Math.floor(Math.random() * colors.length)];
+//
         /**
          * TODO:
          * Pass the `randomColor` variable to your function and console.log the results.
@@ -123,8 +122,8 @@
          * and alerts to display to the user what their lucky number was, what their
          * price before the discount was, and what their price after the discount is.
          */
-Generate a random number between 0 and 6
-var luckyNumber = Math.floor(Math.random() * 6);
+// Generate a random number between 0 and 6
+// var luckyNumber = Math.floor(Math.random() * 6);
 
         /**
          * TODO:
