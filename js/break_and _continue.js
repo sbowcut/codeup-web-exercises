@@ -3,10 +3,9 @@
 //     var numberChosen = prompt("Chose an odd number between 1 and 50.")
 //     var number = numberChosen
 // }
-var numberChosen = prompt("Chose an odd number between 1 and 50.")
 while ((numberChosen <= 0) || (numberChosen > 50)) {
+    var numberChosen = prompt("Chose an odd number between 1 and 50.")
     alert("That's not a number between 1 and 50, try again.")
-    prompt("Chose an odd number between 1 and 50.")
     if ((numberChosen >= 1) || (numberChosen <= 50)) {
         break;
     }

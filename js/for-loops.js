@@ -20,9 +20,9 @@
 //
 // showMultiplicationTable(7)
 //
-
+//
 // for (let step = 0; step < 10; step++){
-//     var randNum = (Math.floor(Math.random() * 200) + 20);
+//     var randNum = Math.floor(Math.random() * (200 - 20 + 1) + 20);
 //     console.log(randNum);
 //     if(randNum % 2 === 0) {
 //         console.log("The number is even.");
@@ -35,6 +35,13 @@
 // for (let step = 0; step < 9; step++){
 //     console.log(num1 *("" + interval++));
 //     num1 = num1 + 1;
+// }
+// for(let i = 0; i <= 9; i++){
+//     var string = '';
+//     for(let x = 1; x <= i; x++){
+//         string += i + "";
+//     }
+//     console.log(string);
 // }
 // i++ = (i = i + 1)
 // i = i - 5
