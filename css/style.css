@@ -1,0 +1,20 @@
+.fancy-header {
+    color: purple;
+    text-align: center;
+}
+h2 {
+    color: aquamarine;
+    text-decoration: underline;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+body {
+    background-color: coral;
+    font-style: oblique;
+}
+ol {
+    list-style: square;
+}
+ul {
+    list-style: armenian;
+}
