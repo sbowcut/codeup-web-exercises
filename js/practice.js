@@ -1,10 +1,15 @@
 "use strict";
-function cubeRoot(num){
-return Math.cbrt(num);
-}
-function cube(num){
-    return num * num * num
+// function cubeRoot(num){
+// return Math.cbrt(num);
+// }
+// function cube(num){
+//     return num * num * num
+// }
+//
+// console.log(cube(3));
+// console.log(cubeRoot(27));
+function returnLast(str){
+    return str.charAt(str.length-1)
 }
 
-console.log(cube(3));
-console.log(cubeRoot(27));
+console.log(returnLast("Hello World"));
