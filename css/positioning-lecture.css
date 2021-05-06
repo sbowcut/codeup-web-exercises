@@ -3,6 +3,9 @@ body {
     font-family : Calibri;
 }
 
+h3 {
+    position: center;
+}
 /*
 TODO: notice in the html that we have
     those nice anchor tags?
@@ -56,6 +59,7 @@ main {
     padding : 2%;
     margin  : 0;
 }
+
 
 /*
     TODO: Now, I've created my blog!

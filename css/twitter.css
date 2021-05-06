@@ -5,6 +5,12 @@
     --light-bg: #FFF;
     --separator-color: #DDD;
 }
+.nav {
+    position: fixed;
+    padding: 1.5em;
+    width: 100%;
+    display: inline-block;
+}
 * {
     box-sizing: border-box;
 }
