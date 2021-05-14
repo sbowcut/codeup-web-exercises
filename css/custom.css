@@ -1,0 +1,15 @@
+.jumbotron {
+    position: center;
+}
+.jumbotron h1 {
+    display: flex;
+    justify-content: center;
+}
+/*.nav-item {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: center;*/
+/*}*/
+/*#welcome-container {*/
+/*    opacity: .2;*/
+/*}*/

@@ -3,8 +3,11 @@ nav {
     /*justify-content: flex-end;*/
 }
 nav.nav-links {
-    display: flex;
-    justify-content: flex-end;
+    /*display: flex;*/
+    /*justify-content: flex-end;*/
+}
+image {
+    width: calc(100%);
 }
 @media screen and (min-width:576px) {
     .nav-links >li {

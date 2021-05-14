@@ -14,14 +14,32 @@
 
 // console.log(returnLast("Hello World"));
 
-function remainder(number, divisor){
-    if(typeof parseInt(number) === "number" && typeof parseInt(divisor) === "number"){
-        return parseInt(number) % parseInt(divisor);
-    }else if(typeof number != 'number'){
-        return console.log(`${number} is not a number!`)
-    }else if(typeof divisor != "number"){
-        return console.log(`${divisor} is not a number!`)
-    }
-}
+// function remainder(number, divisor){
+//     if(typeof parseInt(number) === "number" && typeof parseInt(divisor) === "number"){
+//         return parseInt(number) % parseInt(divisor);
+//     }else if(typeof number != 'number'){
+//         return console.log(`${number} is not a number!`)
+//     }else if(typeof divisor != "number"){
+//         return console.log(`${divisor} is not a number!`)
+//     }
+// }
 
-console.log(remainder('10',7))
+// console.log(remainder('10',7))
+
+// function pattern(x){
+//     var number = '';
+//     for (var i = 1; i < 10; i++){
+//         console.log(number += i);
+//     }
+// }
+// pattern(10);
+for (let i = 0; i < 10; i++) {
+    let output = '';
+    for(let j = 1; j <= i; j++) {
+        output +=i;
+    }
+    console.log(output);
+}
+for(let i = 1; i <= 5; i++){
+    console.log("* ".toString().repeat(i));
+}
