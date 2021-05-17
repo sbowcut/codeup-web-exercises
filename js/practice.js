@@ -33,13 +33,19 @@
 //     }
 // }
 // pattern(10);
-for (let i = 0; i < 10; i++) {
-    let output = '';
-    for(let j = 1; j <= i; j++) {
-        output +=i;
-    }
-    console.log(output);
+// for (let i = 0; i < 10; i++) {
+//     let output = '';
+//     for(let j = 1; j <= i; j++) {
+//         output +=i;
+//     }
+//     console.log(output);
+// }
+// for(let i = 1; i <= 5; i++){
+//     console.log("* ".toString().repeat(i));
+// }
+
+function secondToLast(arr){
+    return typeof arr[arr.length - 2];
 }
-for(let i = 1; i <= 5; i++){
-    console.log("* ".toString().repeat(i));
-}
+var fruit = ["apple", "orange", "pineapple", "walnut", "dog", "hamburger"]
+console.log(secondToLast(fruit));
