@@ -44,8 +44,9 @@
 //     console.log("* ".toString().repeat(i));
 // }
 
-function secondToLast(arr){
-    return typeof arr[arr.length - 2];
-}
-var fruit = ["apple", "orange", "pineapple", "walnut", "dog", "hamburger"]
-console.log(secondToLast(fruit));
+// function secondToLast(arr){
+//     return typeof arr[arr.length - 2];
+// }
+// var fruit = ["apple", "orange", "pineapple", "walnut", "dog", "hamburger"]
+// console.log(secondToLast(fruit));
+
