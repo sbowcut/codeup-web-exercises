@@ -49,4 +49,18 @@
 // }
 // var fruit = ["apple", "orange", "pineapple", "walnut", "dog", "hamburger"]
 // console.log(secondToLast(fruit));
-
+// function showTime(){
+//     let dateTime = new Date();
+//     let Time = dateTime.toLocaleTimeString();
+// }
+// const showTime = () => {
+//     let dateTime = new Date();
+//     console.log(dateTime)
+// }
+// setTimeout(showTime, 6000);
+//                                     ^This and this \/ are the same
+// function showTime(){
+//     let dateTime = new Date();
+//     console.log(dateTime)
+// }
+// var abort = setTimeout(showTime, 6000);
