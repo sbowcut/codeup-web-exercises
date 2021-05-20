@@ -24,40 +24,77 @@
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
         </p>
-
+        <button id="btn-1" type="button">Button 1</button>
+        <button id="btn-2" type="button">Button 2</button>
+        <button id="btn-3" type="button">Button 3</button>
+        <button id="btn-4" type="button">Button 4</button>
+        <button id="btn-5" type="button">Button 5</button>
         <script>
             (function () {
                 "use strict";
                 // TODO: Uncomment next line and get the main header element by id
-                var mainHeader = document.getElementById('main-header');
-
+                function buttonOneActivate(){
+                    document.getElementById('btn-1')
+                        .addEventListener('click', buttonOne)
+                }
+                function buttonOne() {
+                    var mainHeader = document.getElementById('main-header');
+                    mainHeader.innerHTML = "JavaScript is Cool";
+                }
+                buttonOneActivate();
                 // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-                mainHeader.innerHTML = "JavaScript is Cool";
+
 
                 // TODO: Uncomment the next line and get the sub header element by id
-                var subHeader = document.getElementById('sub-header');
+                function buttonTwo() {
+                    var subHeader = document.getElementById('sub-header');
 
-                // TODO: Set the text color of subHeader to blue
-                subHeader.style.color = 'blue';
-                // TODO: Uncomment the next line and get all list items
-                var listItems = document.getElementsByTagName('li');
+                    // TODO: Set the text color of subHeader to blue
+                    subHeader.style.color = 'blue';
+                    // TODO: Uncomment the next line and get all list items
+                }
+                function buttonTwoActivate(){
+                    document.getElementById('btn-2')
+                        .addEventListener('click', buttonTwo)
+                }
+                buttonTwoActivate()
 
                 // TODO: Set text color on every other list item to grey
-                for (var i = 0; i < listItems.length; i++) {
-                    if (i % 2 === 0) {
-                        listItems[i].style.color = 'grey';
+                function buttonThree() {
+                    var listItems = document.getElementsByTagName('li');
+                    for (var i = 0; i < listItems.length; i++) {
+                        if (i % 2 === 0) {
+                            listItems[i].style.color = 'grey';
+                        }
                     }
                 }
+                function buttonThreeActivate(){
+                    document.getElementById('btn-3')
+                        .addEventListener('click', buttonThree)
+                }
+                buttonThreeActivate()
                 // TODO: Set text color of li with dbid = 1 to blue
-                var dbid1 = document.getElementById('dbid-1');
-                dbid1.style.color = 'blue'
-
-
+                function buttonFour() {
+                    var dbid1 = document.getElementById('dbid-1');
+                    dbid1.style.color = 'blue'
+                }
+                function buttonFourActivate(){
+                    document.getElementById('btn-4')
+                        .addEventListener('click', buttonFour)
+                }
+                buttonFourActivate()
                 // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-                var subParagraphs = document.getElementsByClassName('sub-paragraph');
+                function buttonFive() {
+                    var subParagraphs = document.getElementsByClassName('sub-paragraph');
 
-                // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-                subParagraphs[0].innerText = 'Mission Accomplished!'
+                    // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+                    subParagraphs[0].innerText = 'Mission Accomplished!'
+                }
+                function buttonFiveActivate(){
+                    document.getElementById('btn-5')
+                        .addEventListener('click', buttonFive)
+                }
+                buttonFiveActivate();
             })();
         </script>
     </body>
