@@ -64,3 +64,38 @@
 //     console.log(dateTime)
 // }
 // var abort = setTimeout(showTime, 6000);
+// for(var i = 0; i <= 10; i++) {
+//     console.log(i);
+// }
+
+// var str = "How are you doing today?";
+// var res = str.split(' ');
+// console.log(res)
+// var band = "The band"
+// band.shred = function (){
+//     console.log("Raaaaaaaa")
+// }
+// band.shred()
+// function randomizer(length) {
+//     var randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+//     var result = '';
+//     for ( var i = 0; i < length.length; i++ ) {
+//         result += randomChars.charAt(Math.floor(Math.random() * randomChars.length));
+//     }
+//     return result;
+// }
+
+// console.log(randomizer('hello world'))
+
+function spongebobMeme(string) {
+    let result = ''
+    for (let i = 0; i < string.length; i++){
+        // let random = Math.floor(Math.random() * 2)
+        // if (random === 1){
+        result += i;
+        // }
+    }
+}
+
+console.log(spongebobMeme('hello world'))
+//Let's get that push baby!!!!
