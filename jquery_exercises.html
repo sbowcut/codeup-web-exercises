@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>jquery exercises</title>
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+              integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+              crossorigin="anonymous">
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+                integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+                crossorigin="anonymous"></script>
+        <script src="js/jquery-2.2.4.js"></script>
+        <script>
+            $(document).ready(alert("jQuery Loaded"));
+
+            $("body").append("<h1 id='h1-1' class='codeup'>Hello codeUp</h1>")
+                .append("<div id='container' class='mainDiv'></div>")
+                .append("<p id='para' class='codeup'>Here's a paragraph!</p>")
+                .append("<ul id='list' class='codeup'>Favorite foods</ul>")
+                .append("<li>pizza</li>")
+                .append("<li>burger</li>")
+                .append("<li>Pennsylvania</li>")
+            var contents = $('h1').html();
+            alert(contents);
+            $(".codeup").css("border-style", "solid").css("border-color", "red").css("border-width", "1px")
+            $("li").css("font-size", "20px")
+            $("h1, li, p").css("background", "yellow")
+            // $("p").css("background", "yellow")
+
+        </script>
+    </body>
+</html>
