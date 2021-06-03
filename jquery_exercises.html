@@ -14,7 +14,7 @@
                 crossorigin="anonymous"></script>
         <script src="js/jquery-2.2.4.js"></script>
         <script>
-            $(document).ready(alert("jQuery Loaded"));
+            // $(document).ready(alert("jQuery Loaded"));
 
             $("body").append("<h1 id='h1-1' class='codeup'>Hello codeUp</h1>")
                 .append("<div id='container' class='mainDiv'></div>")
@@ -23,12 +23,15 @@
                 .append("<li>pizza</li>")
                 .append("<li>burger</li>")
                 .append("<li>Pennsylvania</li>")
-            var contents = $('h1').html();
-            alert(contents);
-            $(".codeup").css("border-style", "solid").css("border-color", "red").css("border-width", "1px")
-            $("li").css("font-size", "20px")
-            $("h1, li, p").css("background", "yellow")
+            // var contents = $('h1').html();
+            // alert(contents);
+            // $(".codeup").css("border-style", "solid").css("border-color", "red").css("border-width", "1px")
+            // $("li").css("font-size", "20px")
+            // $("h1, li, p").css("background", "yellow")
             // $("p").css("background", "yellow")
+            $('#h1-1').click(function() {
+                $(this).css("background", "yellow")
+            });
 
         </script>
     </body>
