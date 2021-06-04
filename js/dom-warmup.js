@@ -13,7 +13,7 @@
 //     document.getElementById("input").value
 // }
 $(document).ready(function(){
-    console.log('document is ready')
+    // console.log('document is ready')
     $("#search").click(function(e){
         e.preventDefault()
         // console.log('click')

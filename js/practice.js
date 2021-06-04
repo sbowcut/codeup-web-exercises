@@ -87,16 +87,20 @@
 
 // console.log(randomizer('hello world'))
 
-function spongebobMeme(string) {
-    let result = ''
-    for (let i = 0; i < string.length; i++){
-        // let random = Math.floor(Math.random() * 2)
-        // if (random === 1){
-        result += i;
-        // }
-    }
-}
 
-console.log(spongebobMeme('hello world'))
+function spongebobMeme(str) {
+    const words = str.split("");
+
+    for (let i = 0; i < words.length; i++) {
+        let random = Math.floor(Math.random() * 2) + 1;
+        if (random === 1) {
+            words[i] = words[i][0].toUpperCase();
+        }else{
+            words[i] = words[i][0].toLowerCase();
+        }
+    }
+    return words.join("");
+}
+console.log(spongebobMeme('hello world this is a test of the spongebob meme function'));
 //Let's get that push baby!!!!
 //Once again I am asking for that green square
