@@ -101,4 +101,13 @@ function spongebobMeme(str) {
     }
     return words.join("");
 }
-console.log(spongebobMeme('hello world this is a test of the spongebob meme function'));
+
+$(`#inputMain`)
+
+function generate(){
+   $(`#mainDiv`).append("h3", )
+}
+$("#submitMain").click(function (){
+    $(`#mainDiv`).append("h3", "userData")
+})
+// console.log(spongebobMeme('hello world this is a test of the spongebob meme function'));
