@@ -102,5 +102,3 @@ function spongebobMeme(str) {
     return words.join("");
 }
 console.log(spongebobMeme('hello world this is a test of the spongebob meme function'));
-//Let's get that push baby!!!!
-//Once again I am asking for that green square
