@@ -42,10 +42,13 @@
     // },function (){
     //     $(this).find(".card-title").attr("card-title")
     // })
-
-    $(`#submitBtn`).click(function () {
-        $(`#override-bootstrap`).css("background-color", "red")
+    $("#submitBtn").click(function (){
+        let website = $("#redirect-url").val()
+        window.location.href = "https://" + website
     })
+    // $(`#submitBtn`).click(function () {
+    //     $(`#override-bootstrap`).css("background-color", "red")
+    // })
     $(`.card-text`).click(function () {
         $(this).css("background-color", "red")
     })
