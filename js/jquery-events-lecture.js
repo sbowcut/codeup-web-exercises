@@ -24,11 +24,25 @@
     //     addEvents(cardContainers, 'images/jazz-music-rubber-duck.jpg', 'mouseover');
     //     addEvents(cardContainers, 'images/question.png', 'mouseout');
     // }
+    let hoverIn = function (){
+        let attributeValue = $(this).attr("data-attribute");
+        $(this).find(".card-title").text(attributeValue)
+    }
+    let hoverOut = function (){
+        $(this).find(".card-title").text("Card")
+    }
+
     $(".col-md-3").hover(function () {
         $(this).find(".img-fluid").attr("src", "images/jazz-music-rubber-duck.jpg")
     }, function () {
         $(this).find(".img-fluid").attr("src", "images/question.png")
-    })
+    }).hover(hoverIn, hoverOut)
+    //     .hover(function () {
+    //     $(this).find(".card-title").attr("data-attribute")
+    // },function (){
+    //     $(this).find(".card-title").attr("card-title")
+    // })
+
     $(`#submitBtn`).click(function () {
         $(`#override-bootstrap`).css("background-color", "red")
     })
@@ -41,6 +55,28 @@
     $(`#main-title`).click(function (){
         $(this).css("font-size", "400%")
     })
+    // let listUpper = $(".list-group-item").toUpperCase();
+    // $( ".list-group-item" ).click(function() {
+    //     let toUpper = $(".list-group-item").toUpperCase()
+    //     $(this)
+    //         .on("click", this, toUpper)
+    //         // .find(this)
+    //         .css("background-color", "blue")
+    // }).click(function() {
+    //     $(this).off()
+    // })
+    $(".list-group-item").click(function() {
+        let clicks = $(this).data('clicks');
+        console.log(clicks)
+        if (clicks) {
+            $(this).css("background-color", "white").css('text-transform', 'lowercase')
+        } else {
+            $(this).css("background-color", "lightblue").css('text-transform', 'uppercase')
+        }
+        $(this).data("clicks", !clicks);
+    });
+
+
     //add mouseover/mouseout events to all selected elements
     // function addEvents(cardContainers, imgPath, listenerType){
     //     cardContainers.forEach((cc) => {

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jquery faq</title>
+    </head>
+    <body>
+        <dl>
+            <dt>YellowStone</dt>
+            <dd class="invisible">Oldest national park founded in 1872</dd>
+
+            <dt>Yosemite</dt>
+            <dd class="invisible">Has three of the 10 highest waterfalls in the world</dd>
+
+            <dt>Death Valley</dt>
+            <dd class="invisible">Hottest place on earth</dd>
+
+            <dt>Sequoia National Park</dt>
+            <dd class="invisible">Largest tree in the world</dd>
+
+            <dt>Wrangell-St. Elias National Park</dt>
+            <dd class="invisible">Largest national park covering 13,000 square miles or 13.2 million acres </dd>
+
+            <dt>Hot Springs National Park</dt>
+            <dd class="invisible">Smallest national park covering about 5,500 acres</dd>
+
+            <dt>Great Smoky Mountains National Park</dt>
+            <dd class="invisible">Most visited national park</dd>
+
+            <dt>Grand Canyon National Park</dt>
+            <dd class="invisible">Is known as one of the seven wonders of the world</dd>
+
+            <dt>Arches National Park</dt>
+            <dd class="invisible">Known for its many stone arches</dd>
+
+            <dt>Dry Tortugas National Park</dt>
+            <dd class="invisible">known for its world-renowned concentration of turtles</dd>
+        </dl>
+        <button id="button" type="button">Click Me!</button>
+        <script src="js/jquery-2.2.4.js"></script>
+        <script>
+            $("#button").click(function (){
+                $(".invisible").css("visibility", "hidden")
+            })
+
+        </script>
+    </body>
+</html>
