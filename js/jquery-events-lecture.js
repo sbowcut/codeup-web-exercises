@@ -37,18 +37,15 @@
     }, function () {
         $(this).find(".img-fluid").attr("src", "images/question.png")
     }).hover(hoverIn, hoverOut)
-    //     .hover(function () {
-    //     $(this).find(".card-title").attr("data-attribute")
-    // },function (){
-    //     $(this).find(".card-title").attr("card-title")
+
+    // $("#submitBtn").click(function (){
+    //     let website = $("#redirect-url").val()
+    //     window.location.href = "https://" + website
     // })
-    $("#submitBtn").click(function (){
-        let website = $("#redirect-url").val()
-        window.location.href = "https://" + website
-    })
     // $(`#submitBtn`).click(function () {
     //     $(`#override-bootstrap`).css("background-color", "red")
     // })
+
     $(`.card-text`).click(function () {
         $(this).css("background-color", "red")
     })
@@ -79,6 +76,22 @@
         $(this).data("clicks", !clicks);
     });
 
+    $("#submitBtn").click(function (){
+        let firstData = $("#first").val();
+        let lastData = $("#last").val();
+        let handleData = $("#handleField").val();
+        if (firstData === ''){
+            alert("Please enter First name!")
+        }else if (lastData === ''){
+            alert("Please enter Last name!")
+        }else if (handleData === ''){
+            alert("Please enter Handle!")
+        }
+        console.log(firstData, lastData, handleData)
+    })
+    // TODO: When the user clicks #submitBtn, log to the console the values of #first, #last, and #handleField
+//  -> If any of the fields are empty, alert the user to fill the empty control (be sure to tell them which control was empty)
+
 
     //add mouseover/mouseout events to all selected elements
     // function addEvents(cardContainers, imgPath, listenerType){
@@ -96,4 +109,4 @@
     // function changeImage(card, imgPath){
     //     card.setAttribute('src', imgPath);
     // }
-})();
+})()
