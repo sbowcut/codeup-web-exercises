@@ -1,11 +1,11 @@
 const mapBoxToken = 'pk.eyJ1Ijoic2Jvd2N1dCIsImEiOiJja3BwcGN3ZHcyeDZ2Mndtd3AzdGlkZTE1In0.B11vhML51Z-JmiVHlB7Jcg'
 mapboxgl.accessToken = mapBoxToken
 
-var map = new mapboxgl.Map({
+const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/outdoors-v11',
     center: [-97.1081, 32.7357],
-    zoom: 12
+    zoom: 1
 });
 
 let marker = setMarker([-97.1081, 32.7357])
