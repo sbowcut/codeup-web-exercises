@@ -88,26 +88,36 @@
 // console.log(randomizer('hello world'))
 
 
-function spongebobMeme(str) {
-    const words = str.split("");
-
-    for (let i = 0; i < words.length; i++) {
-        let random = Math.floor(Math.random() * 2) + 1;
-        if (random === 1) {
-            words[i] = words[i][0].toUpperCase();
-        }else{
-            words[i] = words[i][0].toLowerCase();
-        }
-    }
-    return words.join("");
-}
-
-$(`#inputMain`)
-
-function generate(){
-   $(`#mainDiv`).append("h3", )
-}
-$("#submitMain").click(function (){
-    $(`#mainDiv`).append("h3", "userData")
-})
+// function spongebobMeme(str) {
+//     const words = str.split("");
+//
+//     for (let i = 0; i < words.length; i++) {
+//         let random = Math.floor(Math.random() * 2) + 1;
+//         if (random === 1) {
+//             words[i] = words[i][0].toUpperCase();
+//         }else{
+//             words[i] = words[i][0].toLowerCase();
+//         }
+//     }
+//     return words.join("");
+// }
+//
+// $(`#inputMain`)
+//
+// function generate(){
+//    $(`#mainDiv`).append("h3", )
+// }
+// $("#submitMain").click(function (){
+//     $(`#mainDiv`).append("h3", "userData")
+// })
 // console.log(spongebobMeme('hello world this is a test of the spongebob meme function'));
+let originalString = 'Sam';
+let description = 'beautiful';
+
+
+let myOutput = `${originalString} is an example of ${description} thinking.`;
+
+// commit time baby
+
+
+console.log(myOutput)
